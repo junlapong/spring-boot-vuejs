@@ -29,7 +29,8 @@ public class BackendControllerTest {
 
 	@Before
     public void init() {
-        RestAssured.baseURI = "http://localhost";
+		RestAssured.baseURI = "http://localhost";
+		RestAssured.basePath = "/my-app";
         RestAssured.port = port;
     }
 
