@@ -6,6 +6,7 @@ import Bootstrap from '@/components/Bootstrap'
 import User from '@/components/User'
 import Login from '@/components/Login'
 import Protected from '@/components/Protected'
+import NotFound from '@/components/NotFound'
 
 import store from './store'
 
@@ -29,7 +30,8 @@ const router = new Router({
         },
 
         // otherwise redirect to home
-        { path: '*', redirect: '/' }
+        // { path: '*', redirect: '/' }
+        { path: '*', component: NotFound }
     ]
 });
 
