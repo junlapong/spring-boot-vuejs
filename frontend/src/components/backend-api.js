@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const AXIOS = axios.create({
-  baseURL: `/my-app/api`,
+  baseURL: `${process.env.BASE_URL}api`,
   timeout: 1000
 });
 

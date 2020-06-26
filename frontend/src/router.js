@@ -14,7 +14,7 @@ Vue.use(Router);
 
 const router = new Router({
     mode: 'history', // uris without hashes #, see https://router.vuejs.org/guide/essentials/history-mode.html#html5-history-mode
-    base: '/my-app',
+    base: process.env.BASE_URL,
     routes: [
         { path: '/', component: Hello },
         { path: '/callservice', component: Service },

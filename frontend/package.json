@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf node_modules target",
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "test:unit": "vue-cli-service test:unit --coverage",
     "test:e2e": "vue-cli-service test:e2e",
     "test": "vue-cli-service test:unit && vue-cli-service test:e2e",
